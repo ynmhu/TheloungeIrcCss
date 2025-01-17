@@ -1,0 +1,208 @@
+* {
+
+    font-size: 20px !important;
+}
+
+:root {
+    --body-bg-color: #ffffff;
+    --window-bg-color: #ededed;
+    --body-color: #919191;
+    --date-marker-color: #00af61;
+    --highlight-bg-color: #ff4136;
+}
+
+#form, .messages .msg, .userlist {
+    font-size: 14px;
+    line-height: 1.1;
+}
+#chat, #windows .header {
+    color:black;
+}
+
+#chat .user-mode.voice:before {
+    content: none !important;
+}
+#chat .user-mode.op:before {
+    content: none !important;
+}
+#chat .user-mode.normal:before {
+  content: none !important;
+}
+
+
+#chat .msg[data-type="motd"] .text {
+    background: transparent;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 4px;
+}
+#chat .msg {
+    word-wrap: break-word; 
+    align-items: flex-start; 
+    display: flex-start; 
+    position: relative; 
+    word-break: break-word;
+}
+
+
+#chat .user {
+    color: #000000;
+}
+
+.user-mode.owner .user {
+    color: darkgreen !important;
+}
+
+.user-mode.admin .user {
+    color: violet !important;
+}
+
+.user-mode.op .user {
+    color: red !important;
+}
+
+.user-mode.half-op .user {
+    color: darkorange !important;
+}
+
+.user-mode.voice .user {
+    color: green !important;
+}
+
+.user-mode.normal .user {
+    color: black !important;
+}
+
+#chat button.menu, #viewport .lt, #viewport .rt {
+    color: #000000;
+}
+
+#form #submit, #form #upload {
+    color: #000000;
+}
+
+#chat .from {
+    padding-right: 10px;
+    text-align: right;
+    width: 80px;
+    overflow: hidden;
+}
+
+#chat .userlist .count {
+    background: #919191;
+}
+
+#chat .toggle-content {
+    background: #919191;
+}
+
+#chat .chat {
+    scrollbar-width: none;
+}
+
+body {
+    padding: 0px;
+    color: black;
+}
+
+#sidebar .network .collapse-network-icon::before {
+    content: "v";
+    color: white;
+    font-family: "Unifont" !important;
+}
+
+#footer .connect::before {
+    content: "+";
+    font-family: "Unifont" !important;
+}
+
+#footer .settings::before {
+    content: "*";
+    font-family: "Unifont" !important;
+}
+
+#footer .help::before {
+    content: "?";
+    font-family: "Unifont" !important;
+}
+
+#viewport .lt::before {
+    content: "=";
+    font-family: "Unifont" !important;
+}
+
+#chat button.menu::before {
+    content: "[T]";
+    font-family: "Unifont" !important;
+}
+
+#viewport .rt::before {
+    content: "[U]";
+    font-family: "Unifont" !important;
+}
+
+#chat .count::before {
+    content: none;
+}
+
+.channel-list-item[data-type="lobby"] .add-channel::before {
+    content: "+";
+    font-family: "Unifont" !important;
+}
+
+#form #submit::before {
+    content: ">";
+    font-family: "Unifont" !important;
+}
+
+.channel-list-item .close::before {
+    content: "x";
+    font-family: "Unifont" !important;
+}
+
+#form #upload::before {
+    content: "^";
+    font-family: "Unifont" !important;
+}
+
+#chat .msg[data-type="mode"] .from::before, #chat .msg[data-type="mode_channel"] .from::before {
+    content: "[i]";
+    font-family: "Unifont" !important;
+    color: #2ecc40;
+}
+
+.scroll-down-arrow::after {
+    content: "v";
+    font-family: "Unifont" !important;
+}
+
+#chat .msg[data-type="join"] .from::before {
+    content: ">>";
+    color: #2ecc40;
+    font-family: "Unifont" !important;
+}
+
+#chat .msg[data-type="motd"] .from::before {
+    content: "[!]";
+    color: var(--body-color-muted);
+    font-family: "Unifont" !important;
+}
+
+.btn:active, .btn:focus, .input:focus {
+    outline: 0;
+   
+}
+
+.jump-to-input .input {
+    color: #919191;
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+#sidebar .active, #sidebar .active:hover {
+    background-color: #111111;
+    color: #1e60dd;
+}
+
+.scroll-down-arrow {
+    border: none;
+}
